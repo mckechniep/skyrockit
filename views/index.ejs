@@ -6,17 +6,8 @@
   <title>Skyrockit</title>
 </head>
 <body>
-    <h1>Skyrockit</h1>
-    <p>a job application tracker</p>
-    <% if (user) { %> 
-      <h1>welcome, <%= user.username %>!</h1>
-      <p>
-        <a href="/auth/sign-out">Sign out</a>
-      </p>
-      <% } else { %>
-        <h1>Welcome to Skyrockit</h1>
-      <a href="/auth/sign-up">Sign up</a> 
-      <a href="/auth/sign-in">Sign in</a>.
-      <% } %>
+  <%- include('./partials/_navbar.ejs') %>
+  <h1>Skyrockit</h1>
+  <p>A job application tracker.</p>
 </body>
 </html>
